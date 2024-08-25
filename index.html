@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkaeDev</title>
+    <link rel="stylesheet" href="public/styles.css"></link>
+    <link rel="icon" href="./public/img/logo-nbg.jpg" type="image type"></link>
+    <script defer src="src/script.js"></script>
+    <script src=" https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://kit.fontawesome.com/1592604854.js" crossorigin="anonymous"></script>
+    
+</head>
+<body class="bg-white overflow-x-hidden">
+    <section id="navbar">
+            <nav id="nav" class="bg-white flex items-center fixed top-0 w-full z-30 py-10 lg:h-24 h-16 rounded-md content-center border-b-2">
+                <div class=" lg:hidden flex w-full mx-10 flex-row content-center justify-between items-center px-0">
+                    <a href="#" ><img src="../public/img/logo-nbg.jpg"  class=" w-auto h-16 transition ease-in-out duration-300 hover:scale-110"></a>
+                    <img src="../public/img/menu_icon.png" class="w-auto h-6 cursor-pointer" onclick="openMenu()">
+                </div>
+                <div id="menu" class="lg:text-black text-white lg:content-center lg:mx-3 lg:h-24 lg:flex lg:flex-row flex flex-col lg:justify-around 
+                lg:relative lg:top-0 lg:left-auto lg:-translate-x-2 lg:bg-transparent absolute content-center
+                top-20 w-full left-0 bg-pink-500 bg-opacity-80 lg:border-b-2 -translate-x-full transition ease-in-out duration-200 ">
+                        <a class="menu-item" href="#">Inicio</a>
+                        <div class="border-b-2 border-pink-300"></div>
+                        <a class="menu-item" href="#us">Nosotros</a>
+                        <div class="border-b-2 border-pink-300"></div>
+                        <a class="menu-item" href="#products">Productos</a>
+                        <div class="border-b-2 border-pink-300"></div>
+                        <a href="#" class="hidden lg:flex items-center "><img src="../public/img/logo-nbg.jpg"  class=" w-auto h-16 transition ease-in-out duration-300 hover:scale-110"></a>
+                        <a class="menu-item" href="#services">Servicios</a>
+                        <div class="border-b-2 border-pink-300"></div>
+                        <a class="menu-item" href="#clients">Clientes</a>
+                        <div class="border-b-2 border-pink-300"></div>
+                        <a class="menu-item" href="#contact-us">Contacto</a> 
+                </div>
+            </nav>
+    </section>
+    <section id="hero-section" class="my-hidden delay-100 w-full">
+        <div class="flex text-center flex-wrap flex-col min-h-80 w-full">
+                <div class="flex flex-wrap pt-10 pb-4 md:pb-0 flex-col content-center items-center justify-center bg-black bg-opacity-30 w-full">
+                    <img id="hero-image" class="w-full top-0 flex md:static absolute -z-40 h-auto min-h-96 min-w-hero" src="../public/img/hero-image.jpg">
+                    <h1 class="md:text-6xl md:absolute flex text-3xl md:left-10 md:bottom-32 font-bold text-center lg:text-left text-white pt-20 w-auto">Transforma tu Espacio<br> con Estilo y Elegancia</h1>
+                    <div class="flex flex-row justify-center md:absolute left-10 bottom-0 mt-16 mb-10 z-20 w-auto">  
+                        <a href="#products" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 w-48 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png"> <span class="pl-2">Cortinas y más</span></button></a>
+                        <a href="#contact-us" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 w-48 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png"><span class="pl-2">Cotiza ahora!</span></button></a>     
+                    </div>
+                </div>
+        </div>
+    </section>
+    <section id="us" >
+        <div id="us-divider" class="lg:h-14 h-10"></div>
+        <div class="w-full text-center content-center flex flex-row justify-around my-hidden delay-100">
+            <div class="w-80"></div>
+            <h1 class="font-bold lg:text-5xl text-3xl">De la <span class="text-gray-400">transparencia</span> a la <span class="text-pink-500">privacidad</span> con un solo giro</h1>
+            <div class="w-80"></div>
+        </div>
+        <div id="us-divider" class="lg:h-14 h-10"></div>
+        <div class="flex md:flex-row flex-col lg:justify-around justify-center my-hidden w-full delay-100">
+            <div class="px-8 flex flex-col justify-center text-black lg:px-32">
+                <div class="pb-10 md:text-left text-center">
+                    <h2 class="text-5xl font-bold">Trabajo de <span class="text-pink-500">calidad</span> garantizado</h2>
+                </div>
+                <p class="text-base font-medium md:text-justify text-center">
+                    Con más de 25 años de experiencia, nos dedicamos a la venta y 
+                    mantenimiento de cortinas de alta calidad, ofreciendo productos 
+                    innovadores que mejoran tanto la estética como la funcionalidad 
+                    de hogares y edificios comerciales. Nos especializamos en soluciones 
+                    que incluyen el control de la luz, la eficiencia energética y el confort térmico y visual.  
+                </p>
+                <span class="h-5"></span>
+                <p class=" text-base font-medium md:text-justify text-center">
+                    Nos enorgullece ofrecer productos que no solo embellecen los espacios, 
+                    sino que también aportan beneficios prácticos para nuestros clientes.    
+                </p>
+            </div>
+            <div class="flex justify-center md:mt-0 mt-10 mx-64 md:mx-20 items-center">
+                <img class="lg:h-full min-w-72 " src="../public/img/nosotros-image.jpg">
+            </div>
+        </div>
+    </section>
+    <section id="products">
+        <div id="us-divider" class="lg:h-20 h-10"></div>
+        <div class="w-full text-center content-center flex flex-row justify-around my-hidden delay-100">
+            <div class="w-80"></div>
+            <div>
+                <h1 class="font-bold lg:text-4xl text-3xl pb-5">Productos de la más <span class="text-pink-500">alta</span> calidad</h1>
+                <h1 class="font-bold lg:text-2xl text-lg">Pregunta por ellos con solo un <span class="text-pink-500">click</span></h1>
+            </div>
+            <div class="w-80"></div>
+        </div>
+        
+        <div id="us-divider" class="lg:h-16 h-8"></div>
+        <div id="products-col" class="flex flex-col items-center">
+            <div id="product-row" class="flex flex-row my-hidden">
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container" >
+                                <h2 id="product-item-text" >Estores</h2>
+                        </div>
+                        <img id="product-item-img"  src="./public/img/estores.jpg">
+                    </a>
+                    
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            <h2 id="product-item-text">Cortinas</h2>
+                        </div>
+                    <img id="product-item-img" src="./public/img/cortinas.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Alfombras</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/alfombras.jpg">
+                    </a>
+                    
+                </div>
+            </div>
+            <div id="product-row" class="flex flex-row my-hidden">
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Persianas horizontales</h2>
+    
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/persianas-horizontales.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Persianas verticales</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/persianas-verticales.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Persianas de bambú</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/persianas-bambu.jpg">
+                    </a>
+                    
+                </div>
+            </div>
+            <div id="product-row" class="flex flex-row my-hidden">
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Cabeceras</h2>
+    
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/cabeceras.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Puertas de mampara</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/mamparas.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Puerta de ducha</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/duchas.jpg">
+                    </a>
+                    
+                </div>
+            </div>
+            <div id="product-row" class="flex flex-row my-hidden">
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Sillas</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/sillas.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Espejos</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/espejos.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Muebles</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/muebels.jpg">
+                    </a>
+                    
+                </div>
+            </div>
+            <div id="product-row" class="flex flex-row my-hidden">
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Rieles hoteleros</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/rieles-hoteleros.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Rollers duo</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/rollers-duo.jpg">
+                    </a>
+                    
+                </div>
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            
+                            <h2 id="product-item-text">Cortinas de cenafa acolchada</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/cortinas-cenefa-acolchada.jpg">
+                    </a>
+                
+                </div>
+            </div>
+            <div id="product-row" class="flex flex-row my-hidden">
+                <div id="product-item">
+                    <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+                        <div class="bg-black bg-opacity-30 rounded-3xl absolute md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 "></div>
+                        <div id="product-item-text-container">
+                            <h2 id="product-item-text">Cortinas con pasadores</h2>
+    
+                        </div>
+                        <img id="product-item-img" src="./public/img/cortina-pasadores-madera.jpg">
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="my-hidden" >
+        <div id="us-divider" class="lg:h-20 h-10"></div>
+        <div class="w-full text-center content-center flex flex-row justify-around delay-100">
+            <div class="w-80"></div>
+            <div>
+                <h1 class="font-bold lg:text-4xl text-3xl pb-5">Los mejores <span class="text-pink-500">servicios</span> a tu alcance</h1>
+            </div>
+            <div class="w-80"></div>
+        </div>
+        <div id="us-divider" class="lg:h-20 h-10"></div>
+        <div id="carousel-container" class="carousel-container relative flex flex-row h-52 ">
+            <div id="left" class="buttons bg-white bg-opacity-90 flex items-center justify-center h-12 w-12 border-none rounded-full shadow-xl cursor-pointer
+                  absolute left-3 top-20 ">
+                <i class="fa fa-angle-left"></i>
+            </div>
+            <ul id="carousel" >
+                
+                <li id="carousel-item">
+                    <div id="carousel-item-img"><img src="./public/img/mante-alfombra.jpg" alt="image-servicio-alfombra" draggable = "false"></div>
+                    <div id="carousel-item-text-cont">
+                        <h2 id="carousel-item-text">Limpieza de alfombras</h2>
+                    </div>
+                </li>
+            
+                <li id="carousel-item">
+                    <div id="carousel-item-img"><img src="./public/img/mante-colchones.jpg" alt="image-servicio-colchones" draggable = "false"></div>
+                    <div id="carousel-item-text-cont">
+                        
+                        <h2 id="carousel-item-text">Limpieza de colchones</h2>
+                    </div>
+                </li>
+                <li id="carousel-item">
+                    <div id="carousel-item-img"><img src="./public/img/mante-cortinas.jpg" alt="image-servicio-cortinas" draggable = "false"></div>
+                    <div id="carousel-item-text-cont">
+                        
+                        <h2 id="carousel-item-text">Mantenimiento y limpieza de cortinas</h2>
+                        
+                    </div>
+                </li>
+                <li id="carousel-item">
+                    <div id="carousel-item-img"><img src="./public/img/mante-persianas.jpg" alt="image-servicio-persianas" draggable = "false"></div>
+                    <div id="carousel-item-text-cont">
+                        
+                        <h2 id="carousel-item-text">Mantenimiento y limpieza de persianas</h2>
+                    </div>
+                </li>
+                <li id="carousel-item">
+                    <div id="carousel-item-img"><img src="./public/img/mante-rollersjpg.jpg" alt="image-servicio-rollers" draggable = "false"></div>
+                    <div id="carousel-item-text-cont">
+                        
+                        <h2 id="carousel-item-text">Mantenimiento y limpieza de rollers</h2>
+                    </div>
+                </li>
+                <li id="carousel-item">
+                    <div id="carousel-item-img"><img src="./public/img/mante-sillas.jpg" alt="image-servicio-sillas" draggable = "false"></div>
+                    <div id="carousel-item-text-cont">
+                        
+                        <h2 id="carousel-item-text">Limpieza y tapizado de sillas, muebles y más</h2>
+                    </div>
+                </li>
+            </ul>
+            <div id="right" class="buttons bg-white bg-opacity-90 flex items-center justify-center h-12 w-12 border-none rounded-full shadow-xl cursor-pointer
+             absolute right-3 top-20">
+                <i class="fa fa-angle-right"></i>
+            </div>
+        </div>
+    </section>
+    <section id="clients" class="my-hidden">
+        <div class="h-40"></div>
+        <div class="flex flex-col px-32">
+            <div class="w-full flex "><h2 class="font-bold lg:text-5xl text-4xl text-left w-1/3">Compañías con las que <spa class="text-pink-500">trabajamos</spa></h2></div>
+            <div class="w-full flex mt-10">
+                <p class="text-base font-medium text-justify">
+                    ¡Calidad y rapidéz para tu hogar al mejor precio!<br>
+                    Estas son algunas empresas afiliadas a Decoyermith 
+                </p>
+            </div>
+            <div class="flex flex-row w-full content-center items-center justify-around">
+                <img class="lg:h-12 md:h-10 h-8 transition ease-in-out hover:scale-105  duration-300" src="./public/img/decointeriors-logo.png">
+                <img class="lg:h-24 md:h-20 h-16 transition ease-in-out hover:scale-105  duration-300" src="./public/img/gamarrita-logo.png">
+                <img class="lg:h-24 md:h-20 h-16 transition ease-in-out hover:scale-105  duration-300" src="./public/img/lafayette.png">
+            </div>
+
+        </div>
+    </section>
+    <section id="contact-us" class="my-hidden">
+        <div class="my-24 px-32">
+            <div class=" flex lg:flex-row flex-col w-full justify-between">
+                <div class="flex flex-col w-auto">
+                    <div class="my-10">
+                        <h2 class="lg:text-5xl text-4xl font-bold text-left"><span class="text-pink-500">Cotiza</span> ahora!</h2>
+                    </div>
+                    <p class="text-base font-medium text-justify w-96">
+                        ¡Cuentanos tus dudas y consulta los precios de nuestros productos y servicios!
+                    </p>
+                    <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                        <input type="hidden" name="access_key" value="7618aa76-12dc-47e4-95b1-c45acf5b608c" />
+                        <input type="hidden" name="subject" value="Nuevo mensaje desde Decoyermith" />
+                        <input type="checkbox" name="botcheck" id="" style="display: none;" />
+                        <div class="h-captcha" data-captcha="true"></div>
+                        <div class="flex flex-row w-full">
+                            <div class="w-1/2 mr-1">
+                                <p class="mt-8 font-semibold mb-2">Nombre</p>
+                                <input id="name" name="name" type="text" class="flex relative w-full min-w-32 border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors" autocomplete="off"></input>
+                            </div>
+                            <div class="w-1/2 ml-1">
+                                <p class="mt-8 font-semibold mb-2">Celular</p>
+                                <input id="phone" name="phone" type="tel" minlength="9" maxlength="9" pattern="9[0-9]{8}" class="flex relative w-full min-w-32 border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors" autocomplete="off"></input>    
+                            </div>
+                        </div>
+                        <div class="w-full">
+                            <p class="mt-2 font-semibold mb-2">E-mail</p>
+                            <input id="email" name="email" type="email" class="flex relative
+                            w-full min-w-64 border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors " autocomplete="off"></input>
+                        </div>
+
+                        <div class="w-full">
+                            <p class="mt-2 font-semibold mb-2">Mensaje</p>
+                            <textarea id="message" name="message"  class="flex relative w-full min-h-52 border  rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors"></textarea>
+                        </div>
+                        
+                        <div class="lg:w-auto py-3 w-full flex flex-row lg:justify-start justify-center items-center">
+                            <button type="submit" class="text-center text-white font-semibold rounded-3xl px-5 py-2.5 w-auto bg-black hover:bg-gray-900"><span class="text-pink-500">Cotiza</span> ahora!</button>          
+                            <span class="lg:mx-6 mx-1 text-2xl text-pink-500 font-semibold">o</span>
+                            <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank" class="cursor-pointer text-center text-white font-semibold rounded-3xl px-5 py-2.5 w-auto bg-black hover:bg-gray-900"><span class="text-pink-500">Pregunta</span> al WhatsApp!</a>
+                        </div>
+
+                        <p class="text-base text-center text-pink-500 hidden" id="result"></p> 
+                    </form>
+                </div>
+                <div class="hidden lg:flex lg:flex-col lg:my-4 lg:px-10  lg:justify-center lg:items-center">
+                    <img class="rounded-3xl" src="./public/img/contact-us-image.jpg">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="bg-black h-auto w-full">
+            <div class="flex flex-col">
+                <div class="flex flex-row justify-between my-20">
+                    <div class="flex justify-center items-center ml-16 mt-8">
+                        <a href="#"><img src="./public/img/logo-nbg.jpg" class="w-auto min-w-24 h-full min-h-24 max-h-44 hover:scale-110 transition duration-150 ease-in-out"></a>
+                    </div>
+                    <div class="flex md:flex-row flex-col text-white justify-around mt-5 mx-8">
+                        <div class=" flex flex-col justify-center">
+                            
+                            <a class="menu-item-footer lg:mt-3" href="#">Inicio</a>
+                            <a class="menu-item-footer lg:mt-3" href="#us">Nosotros</a>
+                            <a class="menu-item-footer lg:mt-3" href="#products">Productos</a> 
+                        </div>
+                        <div class="lg:w-52 md:w-40"></div>
+                        <div class="flex flex-col justify-center">
+                            <a class="menu-item-footer lg:mt-3" href="#services">Servicios</a>
+                            <a class="menu-item-footer lg:mt-3" href="#contact-us">Contacto</a>
+                        </div>
+                    </div>
+                    <div class="flex flex-col ">
+                       <div class="flex flex-col mr-20 h-full justify-center text-white text-right font-semibold">
+                            <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank"><h3 class="my-2">(+51) 999 551 235</h3></a>
+                            <a href="mailto:yermithdeco@gmail.com"><h3 class="my-2">yermithdeco@gmail.com</h3></a>
+                            <h3 class="my-2">Av José Leal 646 Lince, Lima, Peru</h3>
+                            
+                            <div class="flex flex-row mt-5 justify-end">
+                                <a href="https://www.facebook.com/Decoryermith" target="_blank" ><img class="w-6" src="../public/img/facebook.png"></a>
+                                <a href="" ><img class="w-6 ml-6" src="../public/img/instagram.png" target="_blank"></a>
+                                <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank"><img alt="Whatsapp iconos creados por Freepik - Flaticon" class="w-6 ml-6" src="./public/img/whatsapp.png"></a>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="my-5">
+                    <h3 class="text-white text-center text-lg"> &copy; Copyright Decoryermith 2024. Todos los derechos reservados.</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div id="toastBox" class="group fixed flex items-end flex-col overflow-hidden p-5 bottom-5 right-5 text-white">
+    </div>
+    <div id="go-top-container">
+        <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank">
+            <div id="go-top-button">
+                <img alt="Whatsapp iconos creados por Freepik - Flaticon"  src="./public/img/whatsapp.png">
+            </div>
+        </a>
+        
+    </div>
+</body>
+</html>
