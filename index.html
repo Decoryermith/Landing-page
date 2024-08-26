@@ -13,10 +13,10 @@
 </head>
 <body class="bg-white overflow-x-hidden w-screen">
     <section id="navbar" >
-            <nav id="nav" class="bg-white flex items-center fixed w-screen top-0 z-30 py-10 lg:h-24 h-16 rounded-md content-center border-b-2">
+            <nav id="nav" class="bg-white flex items-center fixed w-screen top-0 z-30 py-5 md:h-24 md:py-0 h-14 rounded-md content-center border-b-2">
                 <div class=" lg:hidden flex mx-10 w-full flex-row content-center justify-between items-center px-0">
-                    <a href="#" ><img src="../public/img/logo-nbg.jpg"  class=" w-auto h-16 transition ease-in-out duration-300 hover:scale-110"></a>
-                    <img src="../public/img/menu_icon.png" class="w-auto h-6 cursor-pointer" onclick="openMenu()">
+                    <a href="#" ><img src="../public/img/logo-nbg.jpg"  class=" scale-75 md:scale-100 w-auto h-16 transition ease-in-out duration-300 hover:scale-110"></a>
+                    <img src="../public/img/menu_icon.png" class="w-auto h-6 cursor-pointer scale-75 md:scale-100" onclick="openMenu()">
                 </div>
                 <div id="menu" class="lg:text-black text-white lg:content-center lg:mx-3 lg:h-24 lg:flex lg:flex-row flex flex-col lg:justify-around 
                 lg:relative lg:top-0 lg:left-auto lg:-translate-x-2 lg:bg-transparent absolute content-center
@@ -37,14 +37,21 @@
             </nav>
     </section>
     <section id="hero-section" class="my-hidden delay-100">
-        <div class="flex text-center  flex-col w-full ">
-                <div class="flex flex-wrap w-full md:pt-20 pt-14 md:pb-0 flex-col content-center items-center justify-center bg-black bg-opacity-30">
-                    <img id="hero-image" class="w-full top-0 flex md:static absolute -z-40 h-auto min-h-96 " src="../public/img/hero-image.jpg">
-                    <h1 class="md:text-6xl md:absolute flex text-3xl md:left-10 md:bottom-32 font-bold text-center lg:text-left text-white pt-20 w-auto">Transforma tu Espacio<br> con Estilo y Elegancia</h1>
-                    <div class="flex flex-row justify-center md:absolute left-10 bottom-0 mt-16 mb-10 z-20 w-auto">  
-                        <a href="#products" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 md:w-48 w-36 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png"> <span class="md:pl-2 pl-0">Cortinas y más</span></button></a>
-                        <a href="#contact-us" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 md:w-48 w-36 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png"><span class="md:pl-2 pl-0">Cotiza ahora!</span></button></a>     
-                    </div>
+        <div class="hero-image">
+            <div class="text-center absolute md:top-2/3 md:left-1/4 md:text-left md:text-5xl md:font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
+                <h1 >Transforma tu Espacio<br> con Estilo y Elegancia</h1>
+            </div>
+                <div class="flex flex-row justify-center md:absolute left-10 bottom-0 mt-8 mb-10 z-20 w-auto">  
+                    <a href="#products" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 md:w-48 w-36 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png"> <span class="md:pl-2 pl-0">Cortinas y más</span></button></a>
+                    <a href="#contact-us" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 md:w-48 w-36 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png"><span class="md:pl-2 pl-0">Cotiza ahora!</span></button></a>     
+                </div>
+            
+          </div>
+        <div class="hidden  text-center  flex-col w-full ">
+                <div class="flex flex-wrap w-screen pt-20 md:pb-0 flex-col content-center items-center justify-center bg-black bg-opacity-30">
+                    <img id="hero-image" class="md:w-screen w-auto md:top-0 top-5 flex md:relative absolute -z-40 h-auto min-h-72" src="../public/img/hero-image1.jpg">
+                    <div class="md:hidden w-screen h-5"></div>
+                    
                 </div>
         </div>
     </section>
@@ -85,7 +92,7 @@
             <div class="w-80"></div>
             <div>
                 <h1 class="font-bold lg:text-4xl text-3xl pb-5">Productos de la más <span class="text-pink-500">alta</span> calidad</h1>
-                <h1 class="font-bold lg:text-2xl text-lg">Pregunta por ellos con solo un <span class="text-pink-500">click</span></h1>
+                <h1 class="font-bold lg:text-2xl text-lg">Toda la información a un <span class="text-pink-500">click</span></h1>
             </div>
             <div class="w-80"></div>
         </div>
@@ -456,7 +463,7 @@
                         </div>
                         
                     </div>
-                    <div class="m-2 w-full flex justify-center">
+                    <div class="w-screen flex justify-center">
                         <div class="flex flex-col h-full justify-center text-white text-center font-semibold">
                              <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank" class="md:text-base text-sm"><h3 class="my-2">(+51) 999 551 235</h3></a>
                              <a href="mailto:yermithdeco@gmail.com"><h3 class="my-2 md:text-base text-sm" >yermithdeco@gmail.com</h3></a>
@@ -470,12 +477,11 @@
                         </div>
                      </div>
                 </div>
-                <div class=" hidden flex-col md:flex md:flex-row justify-between md:my-20 my-5">
-                    
-                    <div class="flex justify-center items-center ml-4 mt-8">
+                <div class=" hidden md:flex md:flex-row justify-between md:my-20 w-screen">
+                    <div class="flex justify-center items-center pl-5">
                         <a href="#"><img src="./public/img/logo-nbg.jpg" class="w-auto min-w-14 h-full md:min-h-24 min-h-16 max-h-44 hover:scale-110 transition duration-150 ease-in-out"></a>
                     </div>
-                    <div class="flex md:flex-row flex-col text-white justify-around mt-5 mx-8">
+                    <div class="flex md:flex-row flex-col text-white justify-around mx-8 ">
                         <div class=" flex flex-col justify-center">
                             
                             <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#">Inicio</a>
@@ -488,19 +494,18 @@
                             <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#contact-us">Contacto</a>
                         </div>
                     </div>
-                    <div class="flex flex-col m-2">
-                       <div class="flex flex-col h-full justify-center text-white text-right font-semibold">
-                            <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank" class="md:text-base text-sm"><h3 class="my-2">(+51) 999 551 235</h3></a>
-                            <a href="mailto:yermithdeco@gmail.com"><h3 class="my-2 md:text-base text-sm" >yermithdeco@gmail.com</h3></a>
-                            <h3 class="my-2 md:text-base text-sm">Av José Leal 646 Lince, Lima, Peru</h3>
+                    <div class="flex flex-col h-full justify-center text-white text-right font-semibold md:pr-8">
+                        <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank" class="md:text-base text-sm"><h3 class="my-2">(+51) 999 551 235</h3></a>
+                        <a href="mailto:yermithdeco@gmail.com"><h3 class="my-2 md:text-base text-sm" >yermithdeco@gmail.com</h3></a>
+                        <h3 class="my-2 md:text-base text-sm">Av José Leal 646 Lince, Lima, Peru</h3>
                             
-                            <div class="flex flex-row mt-5 justify-end">
-                                <a href="https://www.facebook.com/Decoryermith" target="_blank"><img class="w-6" src="../public/img/facebook.png"></a>
-                                <a href="" ><img class="w-6 ml-6" src="../public/img/instagram.png" target="_blank"></a>
-                                <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank"><img alt="Whatsapp iconos creados por Freepik - Flaticon" class="w-6 ml-6" src="./public/img/whatsapp.png"></a>
-                            </div>
-                       </div>
+                        <div class="flex flex-row mt-5 justify-end">
+                            <a href="https://www.facebook.com/Decoryermith" target="_blank"><img class="w-6" src="../public/img/facebook.png"></a>
+                            <a href="" ><img class="w-6 ml-6" src="../public/img/instagram.png" target="_blank"></a>
+                            <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank"><img alt="Whatsapp iconos creados por Freepik - Flaticon" class="w-6 ml-6" src="./public/img/whatsapp.png"></a>
+                        </div>
                     </div>
+                    
                 </div>
                 <div class="my-5">
                     <h3 class="text-white text-center text-lg"> &copy; Copyright Decoryermith 2024. Todos los derechos reservados.</h3>
@@ -510,7 +515,7 @@
     </footer>
     <div id="toastBox" class="group fixed flex items-end flex-col overflow-hidden p-5 bottom-5 right-5 text-white">
     </div>
-    <div class="w-screen fixed h-28 bottom-2 content-center flex justify-end">
+    <div class="w-auto right-0 fixed h-28 bottom-2 content-center flex justify-end">
             <a href="https://api.whatsapp.com/send?phone=51999551235" target="_blank" class="flex w-auto mr-7 justify-center items-center">
                 <div id="whatsapp-button">
                     <img alt="Whatsapp iconos creados por Freepik - Flaticon"  src="./public/img/whatsapp.png">
