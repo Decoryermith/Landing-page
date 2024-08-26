@@ -34,14 +34,32 @@
 }
 
 #product-item{
-    @apply flex flex-wrap text-white m-3 rounded-3xl cursor-pointer transition ease-in-out hover:scale-105  duration-300;
+    @apply flex relative text-white m-3 rounded-3xl cursor-pointer transition ease-in-out hover:scale-105  duration-300;
 }
+
+
+@media screen and (min-width: 0px){
+    .last-product-item{
+        grid-column: auto;
+    }
+}
+@media screen and (min-width: 640px){
+    .last-product-item{
+        grid-column: 2;
+    }
+}
+@media screen and (min-width: 1024px){
+    .last-product-item{
+        grid-column: 4;
+    }
+}
+
 #product-item-text-container{
     @apply absolute md:w-60 w-40 min-w-40 bottom-10;
 }
 
 #product-item-img{
-    @apply  md:w-60 md:h-60 w-40 h-40 min-w-40 min-h-40 rounded-3xl;
+    @apply md:w-60 md:h-60 w-40 h-40 min-h-40 rounded-3xl;
 }
 
 #product-item-text{
@@ -80,6 +98,7 @@
         grid-auto-columns: calc((100% / 2) - 9px);
     }
 }
+
 
 @media screen and (max-width: 480px){
     #carousel{
@@ -137,7 +156,7 @@
 
 /*GOTOP*/
 
-#go-top-button{
+#whatsapp-button{
     animation: popup .3s ease-in-out;
     display: flex;
     align-items: center;
