@@ -55,7 +55,7 @@
 }
 
 #product-item-text-container{
-    @apply absolute md:w-60 w-40 min-w-40 bottom-10;
+    @apply absolute w-full bottom-10;
 }
 
 #product-item-img{
@@ -63,7 +63,7 @@
 }
 
 #product-item-text{
-    @apply text-center font-medium text-2xl;
+    @apply text-center font-medium md:text-2xl text-base w-full;
 }
 
 
