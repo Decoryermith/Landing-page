@@ -137,14 +137,6 @@
 
 /*GOTOP*/
 
-#go-top-container{
-    position: fixed;
-    bottom: 1.5rem;
-    right: 1.5rem;
-    width: 3.3rem;
-    height: 3.3rem;
-}
-
 #go-top-button{
     animation: popup .3s ease-in-out;
     display: flex;
