@@ -788,6 +788,18 @@ video {
   height: 100vh;
 }
 
+.h-32 {
+  height: 8rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-24 {
+  height: 6rem;
+}
+
 .max-h-44 {
   max-height: 11rem;
 }
@@ -1940,6 +1952,10 @@ video {
 
   .lg\:h-full {
     height: 100%;
+  }
+
+  .lg\:h-40 {
+    height: 10rem;
   }
 
   .lg\:w-1\/2 {
