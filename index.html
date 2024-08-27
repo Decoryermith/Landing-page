@@ -40,21 +40,33 @@
             </nav>
     </section>
     <section id="hero-section" class="my-hidden delay-100">
-        <div class="hero-image">
-            <div class="text-center absolute w-screen md:top-2/3 md:text-left md:text-5xl md:font-bold text-4xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-                <h1 class="md:pl-10" >Transforma tu Espacio<br> con Estilo y Elegancia</h1>
-            </div>
-                <div class="flex md:flex-row flex-col w-screen justify-center items-center md:justify-start   absolute md:left-10 md:bottom-10 md:translate-x-0 md:translate-y-0 left-1/2 bottom-0 -translate-x-1/2 -translate-y-1/3 z-20">  
+        <!---->
+        <div class="carousel">
+            <input type="radio" name="carousel" id="slide-btn-1" class="slide-btn" onclick="setInt();" checked />
+            <input type="radio" name="carousel" id="slide-btn-2" class="slide-btn" onclick="setInt();" />
+            <input type="radio" name="carousel" id="slide-btn-3" class="slide-btn" onclick="setInt();" />
+            <div class="slide one">
+                <div class="text-center absolute w-screen md:top-2/3 md:text-left md:text-5xl md:font-bold sm:text-4xl text-2xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
+                    <h1 class="md:pl-10" >Transforma tu Espacio<br> con Estilo y Elegancia</h1>
+                </div>
+                <div class="flex md:flex-row flex-col w-screen justify-center items-center md:justify-start absolute md:left-10 md:bottom-10 md:translate-x-0 md:translate-y-0 left-1/2 bottom-0 -translate-x-1/2 -translate-y-1/3 z-20">  
                     <a href="#products" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 w-48 my-2 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png"> <span class="md:pl-2 pl-0">Cortinas y más</span></button></a>
                     <a href="#contact-us" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 w-48 my-2 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png"><span class="md:pl-2 pl-0">Cotiza ahora!</span></button></a>     
                 </div>
-            
+            </div>
+            <div class="slide two"></div>
+            <div class="slide three"></div>
+            <div class="labels">
+              <label for="slide-btn-1"></label>
+              <label for="slide-btn-2"></label>
+              <label for="slide-btn-3"></label>
+            </div>
           </div>
+        <!---->
         <div class="hidden  text-center  flex-col w-full ">
                 <div class="flex flex-wrap w-screen pt-20 md:pb-0 flex-col content-center items-center justify-center bg-black bg-opacity-30">
                     <img id="hero-image" class="md:w-screen w-auto md:top-0 top-5 flex md:relative absolute -z-40 h-auto min-h-72" src="../public/img/hero-image1.jpg">
                     <div class="md:hidden w-screen h-5"></div>
-                    
                 </div>
         </div>
     </section>
@@ -67,7 +79,7 @@
         </div>
         <div id="us-divider" class="lg:h-24 h-20"></div>
         <div class="flex md:flex-row flex-col lg:justify-around justify-center my-hidden w-full delay-100">
-            <div class="px-8 flex flex-col justify-center text-black lg:px-32">
+            <div class="px-8 flex flex-col justify-center text-black lg:px-24">
                 <div class="pb-10 md:text-left text-center">
                     <h2 class="sm:text-5xl text-4xl font-bold">Trabajo de <span class="text-pink-500">calidad</span> garantizado</h2>
                 </div>
@@ -84,8 +96,8 @@
                     sino que también aportan beneficios prácticos para nuestros clientes.    
                 </p>
             </div>
-            <div class="flex justify-center md:mt-0 mt-10 md:mx-20 items-center w-screen px-20">
-                <img class="lg:h-full min-w-72 " src="../public/img/nosotros-image.jpg">
+            <div class="flex justify-center max-h-96 md:mt-0 mt-10 lg:mx-14 md:mx-10 items-center w-screen lg:px-14 md:px-10 px-0">
+                <img class="max-h-96 min-w-40" src="../public/img/nosotros-image.jpg">
             </div>
         </div>
     </section>

@@ -1,3 +1,26 @@
+
+var int;
+  function setInt() {
+    clearInterval(int);
+    int = setInterval(function() {
+      var btns = document.getElementsByName("carousel");
+      for(var i = 0; i < btns.length; i++) {
+        if(btns[i].checked) {
+          btns[i].checked = false;
+          if(i + 1 == btns.length) {
+            btns[0].checked = true;
+          }
+          else {
+            btns[i + 1].checked = true;
+          }
+          return;
+        }
+      }
+    }, 5000); 
+  }
+  setInt();
+
+
 let opened = false;
 
 function openMenu(){
@@ -42,12 +65,14 @@ hiddenElements.forEach((el) => observer.observe(el));
 
 //to make the carousel work
 const carouselContainer = document.getElementById("carousel-container");
+const hero = document.getElementById('hero-image');
 const carousel = document.getElementById("carousel");
 const arrowBtns = document.querySelectorAll(".buttons");
 const firstCardWidth = document.getElementById("carousel-item").offsetWidth;
 const carouselItems = [...carousel.children];
 
 let isDragging = false, startX, startScrollLeft, timeoutId;
+let timeoutIdHero;
 
 let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
 
@@ -85,11 +110,34 @@ const dragStop = () =>{
 }
 
 const autoplay = () =>{
-    
     timeoutId  = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2000);
 
 }
-
+function isInViewport(element) {
+    var bounding = element.getBoundingClientRect();
+    if (
+        bounding.right <= (window.innerWidth || document.documentElement.clientWidth) &&
+        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+    ) {
+        console.log('In the viewport! :)');
+        return true;
+    } else {
+        console.log('Not in the viewport. :(');
+        return false;
+    }
+}
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+async function myFunction (){
+    console.log("clicked");
+    await sleep(2000);
+    hero.classList.remove('hero-image1');
+    hero.classList.add('hero-image2'); 
+    await sleep(2000);
+    hero.classList.remove('hero-image2');
+    hero.classList.add('hero-image1'); 
+}
 
 const infiniteScroll = () =>{
     if(carousel.scrollLeft === 0){
@@ -112,6 +160,11 @@ document.addEventListener("mouseup", dragStop);
 carousel.addEventListener("scroll", infiniteScroll);
 carouselContainer.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 carouselContainer.addEventListener("mouseleave", autoplay);
+window.addEventListener("scroll", function (){
+    if(isInViewport(hero)){
+        myFunction();
+    }
+})
 
 
 //To recieve messages:

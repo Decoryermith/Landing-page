@@ -4,6 +4,76 @@
 
 @import "tailwindcss/utilities";
 
+  .slide-btn {
+    display: none;
+  }
+  .carousel {
+    @apply lg:mt-12 mt-0;
+    position: relative;
+    width: screen;
+    height: 500px;
+    overflow: hidden;
+  }
+  
+  .slide {
+    float: left;
+    height: 100%;
+    width: 0;
+    transition: width .3s linear;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .labels {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .labels label {
+    cursor: pointer;
+    display: inline-block;
+    background-color: transparent;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin: .5vmin 2vmin;
+    border: 3px solid white;
+  }
+  .carousel .one,
+  .carousel .two,
+  .carousel .three
+ {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .carousel .one {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/img/hero-image1.jpg");
+
+  }
+  .carousel .two {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/img/hero-image2.jpg");
+
+  }
+  .carousel .three {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/img/hero-image3.jpg");
+
+  }
+  
+  #slide-btn-1:checked ~ .one,
+  #slide-btn-2:checked ~ .two,
+  #slide-btn-3:checked ~ .three{
+    width: 100%;
+  }
+  
+  #slide-btn-1:checked ~ .labels label[for="slide-btn-1"],
+  #slide-btn-2:checked ~ .labels label[for="slide-btn-2"],
+  #slide-btn-3:checked ~ .labels label[for="slide-btn-3"]{
+    background-color: white;
+  }
+  
+
 .btn-contact-me{
     @apply text-white px-5 py-2.5 rounded-md mx-5 transition duration-300 ease-in-out bg-blue-500 hover:bg-blue-600;
 }
@@ -11,8 +81,24 @@
     min-width: 800px;
 }
 
-.hero-image {
+.hero-image1 {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/img/hero-image1.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.hero-image2 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/img/hero-image2.jpg");
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-image3 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/img/hero-image3.jpg");
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
