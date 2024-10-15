@@ -1,4 +1,59 @@
+products = [
+    {name: "Estores", image: "./public/img/estores.jpg", alt: "Producto estores"},
+    {name: "Cortinas", image: "./public/img/cortinas.jpg", alt: "Producto cortinas"},
+    {name: "Alfombras", image: "./public/img/alfombras.jpg", alt: "Producto alfombras"},
+    {name: "Persianas horizontales", image: "./public/img/persianas-horizontales.jpg", alt: "Producto persianas horizontales"},
+    {name: "Persianas verticales", image: "./public/img/persianas-verticales.jpg", alt: "Producto Persianas verticales"},
+    {name: "Persianas de bambú", image: "./public/img/persianas-bambu.jpg", alt: "Producto Persianas bambu"},
+    {name: "Cabeceras", image: "./public/img/cabeceras.jpg", alt: "Producto Cabeceras"},
+    {name: "Puertas de mampara", image: "./public/img/mamparas.jpg", alt: "Producto mamparas"},
+    {name: "Puerta de ducha", image: "./public/img/duchas.jpg", alt: "Producto Puerta de ducha"},
+    {name: "Sillas", image: "./public/img/sillas.jpg", alt: "Producto Sillas"},
+    {name: "Espejos", image: "./public/img/espejos.jpg", alt: "Producto Espejos"},
+    {name: "Muebles", image: "./public/img/muebels.jpg", alt: "Producto Muebels"},
+    {name: "Rieles hoteleros", image: "./public/img/rieles-hoteleros.jpg", alt: "Producto Rieles hoteleros"},
+    {name: "Rollers duo", image: "./public/img/rollers-duo.jpg", alt: "Producto Rollers duo"},
+    {name: "Cortinas de cenafa acolchada", image: "./public/img/cortinas-cenefa-acolchada.jpg", alt: "Producto Cortinas de cenafa acolchada"},
+    {name: "Cortinas con pasadores", image: "./public/img/cortina-pasadores-madera.jpg", alt: "Producto Cortinas con pasadores"},
+]
+function createItem(){
+    const container = document.getElementById("products-col");
+    for (let index = 0; index < products.length; index++) {
+        const divProductItem = document.createElement('div');
+        divProductItem.id = "product-item";
 
+        const aRedirect = document.createElement('a');
+        const wtspMessage = `Hola%2C%20estoy%20interesado%20en%20${encodeURIComponent(products[index].name)}`
+        //aRedirect.href = `https://wa.me/51999551235?text=${wtspMessage}`;
+        aRedirect.href = `https://api.whatsapp.com/send?phone=51999551235&text=${wtspMessage}`;
+        aRedirect.target = "_blank";
+
+        const divBg = document.createElement('div');
+        divBg.classList.add('bg-black', 'bg-opacity-30', 'rounded-3xl', 'absolute', 'md:h-60', 'w-full', 'h-40', 'min-h-40');
+
+        const divText = document.createElement('div');
+        divText.id = "product-item-text-container";
+
+        const productName = document.createElement('h2');
+        productName.id = "product-item-text";
+        productName.textContent = products[index].name;
+
+        const productImage = document.createElement('img');
+        productImage.id = "product-item-img";
+        productImage.src = products[index].image;
+        productImage.alt = products[index].alt;
+
+        divProductItem.appendChild(aRedirect);
+        divText.appendChild(productName);
+        aRedirect.appendChild(divBg);
+        aRedirect.appendChild(divText)
+        aRedirect.appendChild(productImage);
+
+        container.appendChild(divProductItem);
+    }
+    
+}
+document.addEventListener('DOMContentLoaded', createItem());
 var int;
   function setInt() {
     clearInterval(int);
