@@ -53,7 +53,55 @@ function createItem(){
     }
     
 }
+services = [
+    {name: "Limpieza de alfombras", image: "./public/img/mante-alfombra.jpg", alt: "Servicio de mantenimiento de alfombras"},
+    {name: "Limpieza de colchones", image: "./public/img/mante-colchones.jpg", alt: "Servicio de mantenimiento de colchones"},
+    {name: "Mantenimiento y limpieza de cortinas", image: "./public/img/mante-cortinas.jpg", alt: "Servicio de mantenimiento de cortinas"},
+    {name: "Mantenimiento y limpieza de persianas", image: "./public/img/mante-persianas.jpg", alt: "Servicio de mantenimiento de persianas"},
+    {name: "Mantenimiento y limpieza de rollers", image: "./public/img/mante-rollersjpg.jpg",  alt: "Servicio de mantenimiento de rollers"},
+    {name: "Limpieza y tapizado de sillas, muebles y más", image: "./public/img/mante-sillas.jpg", alt: "Servicio de limpieza y tapizado de sillas, muebles y más"}
+]
+
+function createService(){
+    const container = document.getElementById("carousel");
+    for (let index = 0; index < services.length; index++) {
+        const serviceItem = document.createElement('li');
+        serviceItem.id = "carousel-item";
+
+        const aRedirect = document.createElement('a');
+        const wtspMessage = `Hola%2C%20estoy%20interesado%20en%20${encodeURIComponent(services[index].name)}`
+        aRedirect.href = `https://api.whatsapp.com/send?phone=51999551235&text=${wtspMessage}`;
+        aRedirect.target = "_blank";
+        
+        const serviceImageDiv = document.createElement('div');
+        serviceImageDiv.id = "carousel-item-img";
+
+        const serviceImage = document.createElement('img');
+        serviceImage.src = services[index].image;
+        serviceImage.alt = services[index].alt;
+        serviceImage.draggable = "false";
+
+        const serviceTextDiv = document.createElement('div');
+        serviceTextDiv.id = "carousel-item-text-cont";
+        
+        const serviceText = document.createElement('h2');
+        serviceText.id = "carousel-item-text";
+        serviceText.textContent = services[index].name;
+
+        serviceTextDiv.appendChild(serviceText);
+        serviceImageDiv.appendChild(serviceImage);
+        aRedirect.appendChild(serviceImageDiv);
+        aRedirect.appendChild(serviceTextDiv);
+        serviceItem.appendChild(aRedirect);
+        container.appendChild(serviceItem);
+    }
+}
+
+//create products and services when page loaded
 document.addEventListener('DOMContentLoaded', createItem());
+document.addEventListener('DOMContentLoaded', createService());
+
+
 var int;
   function setInt() {
     clearInterval(int);
