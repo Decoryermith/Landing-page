@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,40 +14,52 @@
     <meta name="author" content="Decoryermith Team">
     <meta name="robots" content="index, follow">
     <title>Decoryermith</title>
-    <link rel="stylesheet" href="public/styles.css"></link>
-    <link rel="icon" href="./public/img/logo-nbg.jpg" type="image type"></link>
+    <link rel="stylesheet" href="public/styles.css">
+    </link>
+    <link rel="icon" href="./public/img/logo-nbg.jpg" type="image type">
+    </link>
     <script defer src="src/script.js"></script>
     <script src=" https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://kit.fontawesome.com/1592604854.js" crossorigin="anonymous"></script>
-    
+
 </head>
-<body class="bg-white overflow-x-hidden w-screen" >
-    <section id="navbar" >
-            <nav id="nav" class="bg-white flex items-center fixed w-screen top-0 z-30 py-5 md:h-24 md:py-0 h-14 rounded-md content-center border-b-2">
-                <div class=" lg:hidden flex mx-10 w-full flex-row content-center justify-between items-center px-0">
-                    <a href="#" ><img src="../public/img/logo-nbg.jpg"  class=" scale-75 md:scale-100 w-auto h-16 transition ease-in-out duration-300 hover:scale-110" alt="Logo Decoryermith"></a>
-                    <img src="../public/img/menu_icon.png" class="w-auto h-6 cursor-pointer scale-75 md:scale-100" onclick="openMenu()" alt="Icono menu">
-                </div>
-                <div id="menu" class="lg:text-black text-white lg:content-center lg:mx-3 lg:h-24 lg:flex lg:flex-row flex flex-col lg:justify-around 
+
+<body class="bg-white overflow-x-hidden w-screen">
+    <section id="navbar">
+        <nav id="nav"
+            class="bg-white flex items-center fixed w-screen top-0 z-30 py-5 md:h-24 md:py-0 h-14 rounded-md content-center border-b-2">
+            <div class=" lg:hidden flex mx-10 w-full flex-row content-center justify-between items-center px-0">
+                <a href="#"><img src="./public/img/logo-nbg.jpg"
+                        class=" scale-75 md:scale-100 w-auto h-16 transition ease-in-out duration-300 hover:scale-110"
+                        alt="Logo Decoryermith"></a>
+                <img src="./public/img/menu_icon.png" class="w-auto h-6 cursor-pointer scale-75 md:scale-100"
+                    onclick="openMenu()" alt="Icono menu">
+            </div>
+            <div id="menu"
+                class="lg:text-black text-white lg:content-center lg:mx-3 lg:h-24 lg:flex lg:flex-row flex flex-col lg:justify-around 
                 lg:relative lg:top-0 lg:left-auto lg:-translate-x-2 lg:bg-transparent absolute content-center
                 top-14 md:top-24 w-full left-0 bg-pink-500 bg-opacity-80 lg:border-b-2 -translate-x-full transition ease-in-out duration-200 ">
-                        <a class="menu-item" href="#">Inicio</a>
-                        <div class="border-b-2 border-pink-300"></div>
-                        <a class="menu-item" href="#us">Nosotros</a>
-                        <div class="border-b-2 border-pink-300"></div>
-                        <a class="menu-item" href="#products">Productos</a>
-                        <div class="border-b-2 border-pink-300"></div>
-                        <a href="#" class="hidden lg:flex items-center "><img src="../public/img/logo-nbg.jpg"  class=" w-auto h-16 transition ease-in-out duration-300 hover:scale-110" alt="Logo Decoryermith"></a>
-                        <a class="menu-item" href="#services">Servicios</a>
-                        <div class="border-b-2 border-pink-300"></div>
-                        <a class="menu-item" href="#clients">Clientes</a>
-                        <div class="border-b-2 border-pink-300"></div>
-                        <a class="menu-item" href="#contact-us">Contacto</a> 
-                </div>
-                <div id="menu-shade" class="absolute bg-black bg-opacity-40 w-screen h-screen  -translate-x-full transition ease-in-out duration-200 md:top-24 top-14 -z-10" onclick="closeMenu()">
+                <a class="menu-item" href="#">Inicio</a>
+                <div class="border-b-2 border-pink-300"></div>
+                <a class="menu-item" href="#us">Nosotros</a>
+                <div class="border-b-2 border-pink-300"></div>
+                <a class="menu-item" href="#products">Productos</a>
+                <div class="border-b-2 border-pink-300"></div>
+                <a href="#" class="hidden lg:flex items-center "><img src="./public/img/logo-nbg.jpg"
+                        class=" w-auto h-16 transition ease-in-out duration-300 hover:scale-110"
+                        alt="Logo Decoryermith"></a>
+                <a class="menu-item" href="#services">Servicios</a>
+                <div class="border-b-2 border-pink-300"></div>
+                <a class="menu-item" href="#clients">Clientes</a>
+                <div class="border-b-2 border-pink-300"></div>
+                <a class="menu-item" href="#contact-us">Contacto</a>
+            </div>
+            <div id="menu-shade"
+                class="absolute bg-black bg-opacity-40 w-screen h-screen  -translate-x-full transition ease-in-out duration-200 md:top-24 top-14 -z-10"
+                onclick="closeMenu()">
 
-                </div>
-            </nav>
+            </div>
+        </nav>
     </section>
     <section id="hero-section" class="my-hidden delay-100">
         <!---->
@@ -55,58 +68,72 @@
             <input type="radio" name="carousel" id="slide-btn-2" class="slide-btn" onclick="setInt();" />
             <input type="radio" name="carousel" id="slide-btn-3" class="slide-btn" onclick="setInt();" />
             <div class="slide one">
-                <div class="text-center absolute w-screen md:top-2/3 md:text-left md:text-5xl md:font-bold sm:text-4xl text-2xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
-                    <h1 class="md:pl-10" >Transforma tu Espacio<br> con Estilo y Elegancia</h1>
+                <div
+                    class="text-center absolute w-screen md:top-2/3 md:text-left md:text-5xl md:font-bold sm:text-4xl text-2xl font-bold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white">
+                    <h1 class="md:pl-10">Transforma tu Espacio<br> con Estilo y Elegancia</h1>
                 </div>
-                <div class="flex md:flex-row flex-col w-screen justify-center items-center md:justify-start absolute md:left-10 md:bottom-10 md:translate-x-0 md:translate-y-0 left-1/2 bottom-0 -translate-x-1/2 -translate-y-1/3 z-20">  
-                    <a href="#products" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 w-48 my-2 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png" alt="Icono flecha derecha"> <span class="md:pl-2 pl-0">Cortinas y más</span></button></a>
-                    <a href="#contact-us" class=""><button class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 w-48 my-2 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img class="px-3" src="./public/img/arrow-right.png" alt="Icono flecha derecha"><span class="md:pl-2 pl-0">Cotiza ahora!</span></button></a>     
+                <div
+                    class="flex md:flex-row flex-col w-screen justify-center items-center md:justify-start absolute md:left-10 md:bottom-10 md:translate-x-0 md:translate-y-0 left-1/2 bottom-0 -translate-x-1/2 -translate-y-1/3 z-20">
+                    <a href="#products" class=""><button
+                            class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 w-48 my-2 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img
+                                class="px-3" src="./public/img/arrow-right.png" alt="Icono flecha derecha"> <span
+                                class="md:pl-2 pl-0">Cortinas y más</span></button></a>
+                    <a href="#contact-us" class=""><button
+                            class="text-center mx-4 text-white flex flex-row items-center rounded-md px-2 py-2.5 w-48 my-2 hover:scale-110 transition duration-150 ease-in-out bg-pink-600 bg-opacity-70 hover:bg-pink-700"><img
+                                class="px-3" src="./public/img/arrow-right.png" alt="Icono flecha derecha"><span
+                                class="md:pl-2 pl-0">Cotiza ahora!</span></button></a>
                 </div>
             </div>
             <div class="slide two"></div>
             <div class="slide three"></div>
             <div class="labels">
-              <label for="slide-btn-1"></label>
-              <label for="slide-btn-2"></label>
-              <label for="slide-btn-3"></label>
+                <label for="slide-btn-1"></label>
+                <label for="slide-btn-2"></label>
+                <label for="slide-btn-3"></label>
             </div>
-          </div>
+        </div>
         <!---->
         <div class="hidden  text-center  flex-col w-full ">
-                <div class="flex flex-wrap w-screen pt-20 md:pb-0 flex-col content-center items-center justify-center bg-black bg-opacity-30">
-                    <img id="hero-image" class="md:w-screen w-auto md:top-0 top-5 flex md:relative absolute -z-40 h-auto min-h-72" src="../public/img/hero-image1.jpg" alt="Imagen slider 1">
-                    <div class="md:hidden w-screen h-5"></div>
-                </div>
+            <div
+                class="flex flex-wrap w-screen pt-20 md:pb-0 flex-col content-center items-center justify-center bg-black bg-opacity-30">
+                <img id="hero-image"
+                    class="md:w-screen w-auto md:top-0 top-5 flex md:relative absolute -z-40 h-auto min-h-72"
+                    src="./public/img/hero-image1.jpg" alt="Imagen slider 1">
+                <div class="md:hidden w-screen h-5"></div>
+            </div>
         </div>
     </section>
-    <section id="us" >
+    <section id="us">
         <div id="us-divider" class="lg:h-30 h-24"></div>
         <div class="w-full text-center content-center flex flex-row justify-around my-hidden delay-100">
             <div class="w-80"></div>
-            <h1 class="font-bold lg:text-5xl text-3xl">De la <span class="text-gray-400">transparencia</span> a la <span class="text-pink-500">privacidad</span> con un solo giro</h1>
+            <h1 class="font-bold lg:text-5xl text-3xl">De la <span class="text-gray-400">transparencia</span> a la <span
+                    class="text-pink-500">privacidad</span> con un solo giro</h1>
             <div class="w-80"></div>
         </div>
         <div id="us-divider" class="lg:h-24 h-20"></div>
         <div class="flex md:flex-row flex-col lg:justify-around justify-center my-hidden w-full delay-100">
             <div class="px-8 flex flex-col justify-center text-black lg:px-24">
                 <div class="pb-10 md:text-left text-center">
-                    <h2 class="sm:text-5xl text-4xl font-bold">Trabajo de <span class="text-pink-500">calidad</span> garantizado</h2>
+                    <h2 class="sm:text-5xl text-4xl font-bold">Trabajo de <span class="text-pink-500">calidad</span>
+                        garantizado</h2>
                 </div>
                 <p class="text-base font-medium md:text-justify text-center">
-                    Con más de 25 años de experiencia, nos dedicamos a la venta y 
-                    mantenimiento de cortinas de alta calidad, ofreciendo productos 
-                    innovadores que mejoran tanto la estética como la funcionalidad 
-                    de hogares y edificios comerciales. Nos especializamos en soluciones 
-                    que incluyen el control de la luz, la eficiencia energética y el confort térmico y visual.  
+                    Con más de 25 años de experiencia, nos dedicamos a la venta y
+                    mantenimiento de cortinas de alta calidad, ofreciendo productos
+                    innovadores que mejoran tanto la estética como la funcionalidad
+                    de hogares y edificios comerciales. Nos especializamos en soluciones
+                    que incluyen el control de la luz, la eficiencia energética y el confort térmico y visual.
                 </p>
                 <span class="h-5"></span>
                 <p class=" text-base font-medium md:text-justify text-center">
-                    Nos enorgullece ofrecer productos que no solo embellecen los espacios, 
-                    sino que también aportan beneficios prácticos para nuestros clientes.    
+                    Nos enorgullece ofrecer productos que no solo embellecen los espacios,
+                    sino que también aportan beneficios prácticos para nuestros clientes.
                 </p>
             </div>
-            <div class="flex justify-center max-h-96 md:mt-0 mt-10 lg:mx-14 md:mx-10 items-center w-screen lg:px-14 md:px-10 px-0">
-                <img class="max-h-96 min-w-40" src="../public/img/nosotros-image.jpg" alt="Imagen de nosotros">
+            <div
+                class="flex justify-center max-h-96 md:mt-0 mt-10 lg:mx-14 md:mx-10 items-center w-screen lg:px-14 md:px-10 px-0">
+                <img class="max-h-96 min-w-40" src="./public/img/nosotros-image.jpg" alt="Imagen de nosotros">
             </div>
         </div>
     </section>
@@ -115,24 +142,28 @@
         <div class="w-full text-center content-center flex flex-row justify-around my-hidden delay-100">
             <div class="w-80"></div>
             <div>
-                <h1 class="font-bold lg:text-4xl text-3xl pb-5">Productos de la más <span class="text-pink-500">alta</span> calidad</h1>
-                <h1 class="font-bold lg:text-2xl text-lg">Toda la información a un <span class="text-pink-500">click</span></h1>
+                <h1 class="font-bold lg:text-4xl text-3xl pb-5">Productos de la más <span
+                        class="text-pink-500">alta</span> calidad</h1>
+                <h1 class="font-bold lg:text-2xl text-lg">Toda la información a un <span
+                        class="text-pink-500">click</span></h1>
             </div>
             <div class="w-80"></div>
         </div>
-        
+
         <div id="us-divider" class="lg:h-16 h-8"></div>
-        
-        <div id="products-col" class="grid items-center px-10 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-items-center">
+
+        <div id="products-col"
+            class="grid items-center px-10 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 justify-items-center">
 
         </div>
     </section>
-    <section id="services" class="my-hidden" >
+    <section id="services" class="my-hidden">
         <div id="us-divider" class="lg:h-40 h-32"></div>
         <div class="w-full text-center content-center flex flex-row justify-around delay-100">
             <div class="w-80"></div>
             <div>
-                <h1 class="font-bold lg:text-4xl text-3xl pb-5">Los mejores <span class="text-pink-500">servicios</span> a tu alcance</h1>
+                <h1 class="font-bold lg:text-4xl text-3xl pb-5">Los mejores <span class="text-pink-500">servicios</span>
+                    a tu alcance</h1>
             </div>
             <div class="w-80"></div>
         </div>
@@ -153,17 +184,24 @@
     <section id="clients" class="my-hidden">
         <div class="h-40"></div>
         <div class="flex flex-col md:px-32 px-20">
-            <div class="w-full flex lg:justify-start justify-center"><h2 class="font-bold lg:text-5xl text-4xl lg:text-left text-center lg:w-1/2 md:w-1/2 w-auto">Compañías con las que <spa class="text-pink-500">trabajamos</spa></h2></div>
+            <div class="w-full flex lg:justify-start justify-center">
+                <h2 class="font-bold lg:text-5xl text-4xl lg:text-left text-center lg:w-1/2 md:w-1/2 w-auto">Compañías
+                    con las que <spa class="text-pink-500">trabajamos</spa>
+                </h2>
+            </div>
             <div class="w-full flex mt-10 lg:justify-start justify-center">
                 <p class="text-base font-medium lg:text-justify text-center">
                     ¡Calidad y rapidéz para tu hogar al mejor precio!<br>
-                    Estas son algunas empresas afiliadas a Decoyermith 
+                    Estas son algunas empresas afiliadas a Decoyermith
                 </p>
             </div>
             <div class="my-10 flex md:flex-row flex-col w-full content-center items-center justify-around">
-                <img class="mb-5 md:mb-0 mx-2 lg:h-12 md:h-10 h-8 transition ease-in-out hover:scale-105  duration-300" src="./public/img/decointeriors-logo.png" alt="Asociado Decointeriors">
-                <img class="mb-5 md:mb-0 mx-2 lg:h-24 md:h-20 h-16 transition ease-in-out hover:scale-105  duration-300" src="./public/img/gamarrita-logo.png" alt="Asociado Gamarrita">
-                <img class="mb-5 md:mb-0 mx-2 lg:h-24 md:h-20 h-16 transition ease-in-out hover:scale-105  duration-300" src="./public/img/lafayette.png" alt="Asociado Lafayette">
+                <img class="mb-5 md:mb-0 mx-2 lg:h-12 md:h-10 h-8 transition ease-in-out hover:scale-105  duration-300"
+                    src="./public/img/decointeriors-logo.png" alt="Asociado Decointeriors">
+                <img class="mb-5 md:mb-0 mx-2 lg:h-24 md:h-20 h-16 transition ease-in-out hover:scale-105  duration-300"
+                    src="./public/img/gamarrita-logo.png" alt="Asociado Gamarrita">
+                <img class="mb-5 md:mb-0 mx-2 lg:h-24 md:h-20 h-16 transition ease-in-out hover:scale-105  duration-300"
+                    src="./public/img/lafayette.png" alt="Asociado Lafayette">
             </div>
 
         </div>
@@ -173,7 +211,8 @@
             <div class=" flex lg:flex-row flex-col w-full justify-between">
                 <div class="flex flex-col w-auto">
                     <div class="my-10">
-                        <h2 class="lg:text-5xl text-4xl font-bold text-left"><span class="text-pink-500">Cotiza</span> ahora!</h2>
+                        <h2 class="lg:text-5xl text-4xl font-bold text-left"><span class="text-pink-500">Cotiza</span>
+                            ahora!</h2>
                     </div>
                     <p class="text-base font-medium text-justify w-auto">
                         ¡Cuentanos tus dudas y consulta los precios de nuestros productos y servicios!
@@ -186,31 +225,44 @@
                         <div class="flex sm:flex-row flex-col w-full">
                             <div class="sm:w-1/2 w-full sm:mr-1">
                                 <p class="mt-8 font-semibold mb-2">Nombre</p>
-                                <input id="name" name="name" type="text" class="flex relative w-full min-w-32 border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors" autocomplete="off"></input>
+                                <input id="name" name="name" type="text"
+                                    class="flex relative w-full min-w-32 border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors"
+                                    autocomplete="off"></input>
                             </div>
                             <div class="sm:w-1/2 w-full sm:ml-1">
                                 <p class="sm:mt-8 mt-2 font-semibold mb-2">Celular</p>
-                                <input id="phone" name="phone" type="tel" minlength="9" maxlength="9" pattern="9[0-9]{8}" class="flex relative w-full min-w-32 border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors" autocomplete="off"></input>    
+                                <input id="phone" name="phone" type="tel" minlength="9" maxlength="9"
+                                    pattern="9[0-9]{8}"
+                                    class="flex relative w-full min-w-32 border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors"
+                                    autocomplete="off"></input>
                             </div>
                         </div>
                         <div class="w-full">
                             <p class="mt-2 font-semibold mb-2">E-mail</p>
-                            <input id="email" name="email" type="email" class="flex relative
-                            w-full  border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors " autocomplete="off"></input>
+                            <input id="email" name="email" type="email"
+                                class="flex relative
+                            w-full  border rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors "
+                                autocomplete="off"></input>
                         </div>
 
                         <div class="w-full">
                             <p class="mt-2 font-semibold mb-2">Mensaje</p>
-                            <textarea id="message" name="message"  class="flex relative w-full min-h-52 border  rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors"></textarea>
-                        </div>
-                        
-                        <div class="lg:w-auto py-3 w-full flex flex-row lg:justify-start justify-center items-center">
-                            <button type="submit" class="text-center text-white font-semibold rounded-3xl px-2 py-4 sm:py-2.5 sm:w-56 min-w-28 bg-black hover:bg-gray-900 sm:text-base text-sm"><span class="text-pink-500">Cotiza</span> ahora!</button>          
-                            <span class="lg:mx-6 mx-1 text-2xl text-pink-500 font-semibold">o</span>
-                            <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!" target="_blank" class="cursor-pointer text-center text-white font-semibold sm:text-base text-xs rounded-3xl px-2 sm:px-5 py-2.5 middle-padding sm:w-56 min-w-28 bg-black hover:bg-gray-900"><span class="text-pink-500">Pregunta</span> al WhatsApp!</a>
+                            <textarea id="message" name="message"
+                                class="flex relative w-full min-h-52 border  rounded-xl focus:outline-none focus:border-pink-600 focus:border-b-2 border-gray-600 bg-transparent py-1 px-2 transition-colors"></textarea>
                         </div>
 
-                        <p class="text-base text-center text-pink-500 hidden" id="result"></p> 
+                        <div class="lg:w-auto py-3 w-full flex flex-row lg:justify-start justify-center items-center">
+                            <button type="submit"
+                                class="text-center text-white font-semibold rounded-3xl px-2 py-4 sm:py-2.5 sm:w-56 min-w-28 bg-black hover:bg-gray-900 sm:text-base text-sm"><span
+                                    class="text-pink-500">Cotiza</span> ahora!</button>
+                            <span class="lg:mx-6 mx-1 text-2xl text-pink-500 font-semibold">o</span>
+                            <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!"
+                                target="_blank"
+                                class="cursor-pointer text-center text-white font-semibold sm:text-base text-xs rounded-3xl px-2 sm:px-5 py-2.5 middle-padding sm:w-56 min-w-28 bg-black hover:bg-gray-900"><span
+                                    class="text-pink-500">Pregunta</span> al WhatsApp!</a>
+                        </div>
+
+                        <p class="text-base text-center text-pink-500 hidden" id="result"></p>
                     </form>
                 </div>
                 <div class="hidden lg:flex lg:flex-col lg:my-4 lg:px-10  lg:justify-center lg:items-center">
@@ -225,14 +277,16 @@
                 <div class="md:hidden flex flex-col justify-between md:my-20 my-5">
                     <div class="flex flex-row justify-between mx-5">
                         <div class="flex justify-center items-center ml-4 mt-8">
-                            <a href="#"><img src="./public/img/logo-nbg.jpg" class="w-auto min-w-14 h-full md:min-h-24 min-h-16 max-h-44 hover:scale-110 transition duration-150 ease-in-out" alt="Logo Decoryermith"></a>
+                            <a href="#"><img src="./public/img/logo-nbg.jpg"
+                                    class="w-auto min-w-14 h-full md:min-h-24 min-h-16 max-h-44 hover:scale-110 transition duration-150 ease-in-out"
+                                    alt="Logo Decoryermith"></a>
                         </div>
                         <div class="flex md:flex-row flex-col text-white justify-around mt-5 mx-8">
                             <div class=" flex flex-col justify-center">
-                                
+
                                 <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#">Inicio</a>
                                 <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#us">Nosotros</a>
-                                <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#products">Productos</a> 
+                                <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#products">Productos</a>
                             </div>
                             <div class="lg:w-52 md:w-40"></div>
                             <div class="flex flex-col justify-center">
@@ -240,32 +294,43 @@
                                 <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#contact-us">Contacto</a>
                             </div>
                         </div>
-                        
+
                     </div>
                     <div class="w-screen flex justify-center">
                         <div class="flex flex-col h-full justify-center text-white text-center font-semibold">
-                             <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!" target="_blank" class="md:text-base text-sm"><h3 class="my-2">(+51) 999 551 235</h3></a>
-                             <a href="mailto:yermithdeco@gmail.com"><h3 class="my-2 md:text-base text-sm" >yermithdeco@gmail.com</h3></a>
-                             <h3 class="my-2 md:text-base text-sm">Av José Leal 646 Lince, Lima, Peru</h3>
-                             
-                             <div class="flex flex-row mt-5 justify-center">
-                                 <a href="https://www.facebook.com/Decoryermith" target="_blank"><img class="w-6" src="../public/img/facebook.png" alt="Icono Facebook"></a>
-                                 <a href="" ><img class="w-6 ml-6" src="../public/img/instagram.png" target="_blank" alt="Icono Instagram"></a>
-                                 <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!" target="_blank"><img alt="Whatsapp iconos creados por Freepik - Flaticon" class="w-6 ml-6" src="./public/img/whatsapp.png" alt="Icono WhatsApp"></a>
-                             </div>
+                            <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!"
+                                target="_blank" class="md:text-base text-sm">
+                                <h3 class="my-2">(+51) 999 551 235</h3>
+                            </a>
+                            <a href="mailto:yermithdeco@gmail.com">
+                                <h3 class="my-2 md:text-base text-sm">yermithdeco@gmail.com</h3>
+                            </a>
+                            <h3 class="my-2 md:text-base text-sm">Av José Leal 646 Lince, Lima, Peru</h3>
+
+                            <div class="flex flex-row mt-5 justify-center">
+                                <a href="https://www.facebook.com/Decoryermith" target="_blank"><img class="w-6"
+                                        src="./public/img/facebook.png" alt="Icono Facebook"></a>
+                                <a href=""><img class="w-6 ml-6" src="./public/img/instagram.png" target="_blank"
+                                        alt="Icono Instagram"></a>
+                                <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!"
+                                    target="_blank"><img alt="Whatsapp iconos creados por Freepik - Flaticon"
+                                        class="w-6 ml-6" src="./public/img/whatsapp.png" alt="Icono WhatsApp"></a>
+                            </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
                 <div class=" hidden md:flex md:flex-row justify-between md:my-20 w-screen">
                     <div class="flex justify-center items-center pl-5">
-                        <a href="#"><img src="./public/img/logo-nbg.jpg" class="w-auto min-w-14 h-full md:min-h-24 min-h-16 max-h-44 hover:scale-110 transition duration-150 ease-in-out" alt="Logo Decoryermith"></a>
+                        <a href="#"><img src="./public/img/logo-nbg.jpg"
+                                class="w-auto min-w-14 h-full md:min-h-24 min-h-16 max-h-44 hover:scale-110 transition duration-150 ease-in-out"
+                                alt="Logo Decoryermith"></a>
                     </div>
                     <div class="flex md:flex-row flex-col text-white justify-around mx-8 ">
                         <div class=" flex flex-col justify-center">
-                            
+
                             <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#">Inicio</a>
                             <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#us">Nosotros</a>
-                            <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#products">Productos</a> 
+                            <a class="menu-item-footer lg:mt-3 md:text-base text-sm" href="#products">Productos</a>
                         </div>
                         <div class="lg:w-52 md:w-40"></div>
                         <div class="flex flex-col justify-center">
@@ -274,20 +339,30 @@
                         </div>
                     </div>
                     <div class="flex flex-col h-full justify-center text-white text-right font-semibold md:pr-8">
-                        <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!" target="_blank" class="md:text-base text-sm"><h3 class="my-2">(+51) 999 551 235</h3></a>
-                        <a href="mailto:yermithdeco@gmail.com"><h3 class="my-2 md:text-base text-sm" >yermithdeco@gmail.com</h3></a>
+                        <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!"
+                            target="_blank" class="md:text-base text-sm">
+                            <h3 class="my-2">(+51) 999 551 235</h3>
+                        </a>
+                        <a href="mailto:yermithdeco@gmail.com">
+                            <h3 class="my-2 md:text-base text-sm">yermithdeco@gmail.com</h3>
+                        </a>
                         <h3 class="my-2 md:text-base text-sm">Av José Leal 646 Lince, Lima, Peru</h3>
-                            
+
                         <div class="flex flex-row mt-5 justify-end">
-                            <a href="https://www.facebook.com/Decoryermith" target="_blank"><img class="w-6" src="../public/img/facebook.png" alt="Icono Facebook"></a>
-                            <a href="" ><img class="w-6 ml-6" src="../public/img/instagram.png" target="_blank" alt="Icono Instagram"></a>
-                            <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!" target="_blank"><img alt="Whatsapp iconos creados por Freepik - Flaticon" class="w-6 ml-6" src="./public/img/whatsapp.png" alt="Icono WhatsApp"></a>
+                            <a href="https://www.facebook.com/Decoryermith" target="_blank"><img class="w-6"
+                                    src="./public/img/facebook.png" alt="Icono Facebook"></a>
+                            <a href=""><img class="w-6 ml-6" src="./public/img/instagram.png" target="_blank"
+                                    alt="Icono Instagram"></a>
+                            <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!"
+                                target="_blank"><img alt="Whatsapp iconos creados por Freepik - Flaticon"
+                                    class="w-6 ml-6" src="./public/img/whatsapp.png" alt="Icono WhatsApp"></a>
                         </div>
                     </div>
-                    
+
                 </div>
                 <div class="my-5">
-                    <h3 class="text-white text-center text-lg"> &copy; Copyright Decoryermith 2024. Todos los derechos reservados.</h3>
+                    <h3 class="text-white text-center text-lg"> &copy; Copyright Decoryermith 2024. Todos los derechos
+                        reservados.</h3>
                 </div>
             </div>
         </div>
@@ -295,12 +370,15 @@
     <div id="toastBox" class="group fixed flex items-end flex-col overflow-hidden p-5 bottom-5 right-5 text-white">
     </div>
     <div class="w-auto right-0 fixed h-28 bottom-2 content-center flex justify-end">
-            <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!" target="_blank" class="flex w-auto mr-7 justify-center items-center">
-                <div id="whatsapp-button">
-                    <img alt="Whatsapp iconos creados por Freepik - Flaticon"  src="./public/img/whatsapp.png" alt="Icono WhatsApp">
-                </div>
-            </a>
-            
+        <a href="https://api.whatsapp.com/send?phone=51999551235&text=Hola%2C%20quiero%20saber%20más%20sobre%20sus%20productos%20y%20servicios!"
+            target="_blank" class="flex w-auto mr-7 justify-center items-center">
+            <div id="whatsapp-button">
+                <img alt="Whatsapp iconos creados por Freepik - Flaticon" src="./public/img/whatsapp.png"
+                    alt="Icono WhatsApp">
+            </div>
+        </a>
+
     </div>
 </body>
+
 </html>
